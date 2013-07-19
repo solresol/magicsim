@@ -1,0 +1,15 @@
+#imagediv {
+z-index: 5;
+position: absolute;
+left:0px;
+top:0px;
+}
+
+#floaterdiv {
+z-index: 6;
+position: absolute;
+left:0px;
+top:0px;
+background:white;
+font-family: Arial;
+}
