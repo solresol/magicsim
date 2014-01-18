@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>MagicSim Creator</title>
+<script src="creator.js"></script>
+</head>
+
+<body onload="init();">
+<h1>MagicSim Creator</h1>
+
+<div id="image-comparator">
+  <table>
+    <tbody>
+      <tr>
+	<td>
+	  <form>
+	  <input type="file" id="fileA" onchange="load_image('A'); return false;">
+	  </form>
+	</td>
+
+		<td>
+	  <form>
+	  <input type="file" id="fileB" onchange="load_image('B'); return false;">
+	  </form>
+	</td>
+      <tr>
+	<td>
+	  <img style="width: 160px;" id="imageA">
+	  <img style="display: none;" id="fullimageA">
+	</td>
+	<td>
+	  <img style="width: 160px;" id="imageB">
+	  <img style="display: none;" id="fullimageB">
+	</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <canvas id="canvasA"></canvas>
+  <canvas id="canvasB"></canvas>
+  
+
+  </div>
+<hr>
+</body> </html>
